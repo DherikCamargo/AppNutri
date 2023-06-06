@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Calculadora de Calorias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="background"></div>
@@ -15,22 +15,18 @@
   <form id="caloriasForm">
     <div>
       <button id="adicionarAlimento" type="button" onclick="adicionarCampo()">Adicionar Alimento</button>
-
-      <input type="text" id="alimento1" class="campoAutocompletar"  placeholder="Digite um alimento:" oninput="autocompletar(1)">
-
+      <input type="text" id="alimento1" class="campoAutocompletar" placeholder="Digite um alimento:" oninput="autocompletar(1)">
       <div id="divSugestoes1" class="sugestoes"></div>
     </div>
-    <div id="camposExtras" placeholder="Digite um alimento:" ></div>
+    <div id="camposExtras" placeholder="Digite um alimento:"></div>
 
     <div class="botoes">
       <button class="calcular" id="calcular" type="button" onclick="calcularCalorias()">Calcular</button>
-      <button id="resetar" type="button" onclick="resetarFormulario()" >Resetar</button>
+      <button id="resetar" type="button" onclick="resetarFormulario()">Resetar</button>
     </div>
 
     <div id="resultado"></div>
   </form>
-
-  
 
   <script src="index.js"></script>
 </body>
